@@ -4,8 +4,8 @@ error_exit()
         exit 1
 }
 ### params input_bam output_bam
-hs37d5_PhiX="/icgc/ngs_share/assemblies/hg19_GRCh37_1000genomes/indexes/bwa/bwa06_1KGRef_Phix/hs37d5_PhiX.fa"
-picard_jar="/abi/data/puranach/packages/picard.jar"
+hs37d5_PhiX="/omics/odcf/reference_data/legacy/ngs_share/assemblies/hg19_GRCh37_1000genomes/indexes/bwa/bwa06_1KGRef_Phix/hs37d5_PhiX.fa"
+picard_jar="/omics/groups/OE0436/data/puranach/packages/picard.jar"
 module load bwa java picard samtools;
 
 for file in `echo ${input_bam} ${hs37d5_PhiX} ${picard_jar}`; do

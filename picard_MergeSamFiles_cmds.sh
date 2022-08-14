@@ -6,7 +6,7 @@ error_exit()
 
 ### params input_bams output_bam
 #hs37d5_PhiX="/icgc/ngs_share/assemblies/hg19_GRCh37_1000genomes/indexes/bwa/bwa06_1KGRef_Phix/hs37d5_PhiX.fa"
-picard_jar="/abi/data/puranach/packages/picard.jar"
+picard_jar="/omics/groups/OE0436/data/puranach/packages/picard.jar"
 output_dir=$(dirname ${output_bam})
 tmp_dir=$(mktemp -d ${output_dir}/tmp_XXXX)
 module load samtools java;

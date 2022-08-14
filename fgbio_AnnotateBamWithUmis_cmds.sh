@@ -6,7 +6,7 @@ error_exit()
 
 ##params input_bam umi_fastq output_bam
 module load java;
-fgbio_jar="/abi/data/puranach/packages/fgbio-1.1.0.jar"
+fgbio_jar="/omics/groups/OE0436/data/puranach/packages/fgbio-1.1.0.jar"
 
 for file in `echo ${input_bam} ${umi_fastq}`; do
 	if [ ! -e ${file} ]; then
